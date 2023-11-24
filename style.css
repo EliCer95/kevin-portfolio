@@ -1,0 +1,56 @@
+body {
+  margin: 0px;
+}
+header {
+  background-color: #333;
+  height: 100vh;
+}
+h1 {
+  color: white;
+  font-size: 80px;
+  font-family: futura;
+}
+
+h2 {
+  text-align: center;
+}
+section {
+  height: 300px;
+}
+
+footer {
+  background-color: #333;
+  height: 200px;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 800px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.rec-sign {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: red;
+  color: red;
+  margin-right: 30px;
+}
+
+.projects {
+  background-color: white;
+}
+
+.services {
+  background-color: #333;
+  color: white;
+}
+
+.photo {
+  background-color: rgb(141, 170, 141);
+}
