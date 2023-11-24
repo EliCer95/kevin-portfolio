@@ -10,20 +10,44 @@
     <main class="container">
       <header>
         <div class="logo">
-          <div class="one"><div class="inner-one"></div></div>
-          <span class="rec-sign"></span>
+          <div class="focus-outer-one"><div class="focus-inner-one"></div></div>
+          <span class="rec-sign"
+            ><animate
+              attributeName="opacity"
+              dur="1s"
+              values="0;1;0"
+              repeatCount="indefinite"
+              begin="0.1"
+          /></span>
           <div>
             <h1>KEVIN PERALLE</h1>
             <h3>vidéaste</h3>
           </div>
-          <div class="two"><div class="inner-two"></div></div>
+          <div class="focus-outer-two"><div class="focus-inner-two"></div></div>
         </div>
       </header>
-      <section class="projects"><h2>Projects</h2></section>
-      <section class="services"><h2>Services</h2></section>
-      <section class="about"><h2>About</h2></section>
+      <section class="projects">
+        <h2>PROJECTS</h2>
+        <div class="project-items">
+          <video width="500px" controls="controls">
+            <source src="./media/crossfit.mp4" type="video/mp4" />
+          </video>
+          <content>
+            This video was made fro my client running a crossfit studio...
+          </content>
+          <video width="500px" controls="controls">
+            <source src="./media/vape.mp4" type="video/mp4" />
+          </video>
+          <content>
+            This video was made fro my client opening his new vape shop and
+            selling CBD products
+          </content>
+        </div>
+      </section>
+      <section class="services"><h2>SERVICES</h2></section>
+      <section class="about"><h2>ABOUT</h2></section>
       <section class="photo">Photo of Kevin</section>
-      <footer>This is footer</footer>
+      <footer><h2>CONTACT</h2></footer>
     </main>
   </body>
 </html>
