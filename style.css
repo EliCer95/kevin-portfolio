@@ -6,12 +6,15 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header .menu {
   color: white;
-  margin: 20px auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -89,6 +92,12 @@ footer {
   padding: 10px;
   letter-spacing: 0.5rem;
   font-size: 2vw;
+  transition: 200ms all ease-in-out;
+}
+
+.menu-item:hover {
+  font-size: larger;
+  cursor: pointer;
 }
 
 .projects {
@@ -104,10 +113,13 @@ footer {
 }
 
 .services {
-  background-image: url("./media/film-bg.jpg");
+  background-image: url("./media/film-bg.png");
+  background-size: cover;
   color: white;
-  display: flex;
-  justify-content: center;
+  padding: 40px;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.5vw;
 }
 
 .photo {
@@ -137,7 +149,6 @@ footer {
   height: 8vw;
   background-color: #fff;
   position: relative;
-
   justify-self: end;
 }
 
@@ -149,4 +160,30 @@ footer {
   height: 6vw;
   background-color: #000000;
   flex-shrink: 0;
+}
+
+.services-info {
+  display: flex;
+}
+.list-of-services {
+  font-size: 2.5vw;
+  margin: 0px;
+  line-height: 8vw;
+  padding: 0 40px 0px 40px;
+}
+
+.service-description {
+  font-size: 2vw;
+  line-height: 4.5vw;
+  border-left: 2px solid white;
+  padding: 0 40px 0px 40px;
+}
+
+.about-description {
+  font-size: 2vw;
+  line-height: 4.5vw;
+  padding: 40px;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.5vw;
 }
