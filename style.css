@@ -42,7 +42,7 @@ h2 {
   font-family: sans-serif;
   font-weight: lighter;
   letter-spacing: 2vw;
-  margin: 50px;
+  padding: 50px;
 }
 
 section {
@@ -60,6 +60,7 @@ footer {
   background-color: #333;
   height: 200px;
   color: white;
+  margin: 0px;
 }
 
 .grid-container {
@@ -166,24 +167,30 @@ footer {
   display: flex;
 }
 .list-of-services {
-  font-size: 2.5vw;
+  font-size: 2vw;
   margin: 0px;
-  line-height: 8vw;
+  line-height: 6vw;
   padding: 0 40px 0px 40px;
 }
 
 .service-description {
-  font-size: 2vw;
-  line-height: 4.5vw;
+  font-size: 1.5vw;
+  line-height: 3vw;
   border-left: 2px solid white;
   padding: 0 40px 0px 40px;
 }
 
 .about-description {
-  font-size: 2vw;
-  line-height: 4.5vw;
+  font-size: 1.5vw;
+  line-height: 3vw;
   padding: 40px;
   font-family: sans-serif;
   font-weight: 100;
   letter-spacing: 0.5vw;
+  text-align: center;
+}
+
+.photo img {
+  margin: 0px;
+  padding: 0px;
 }
