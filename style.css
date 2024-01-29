@@ -1,12 +1,18 @@
 body {
   margin: 0px;
+  padding: 0px;
 }
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
   min-height: 100vh;
+  background-color: #000000;
+}
+
+section {
+  height: 100vh;
 }
 
 header .menu {
@@ -26,6 +32,11 @@ h1 {
   line-height: 1;
 }
 
+h2 {
+  text-align: center;
+  font-family: roboto;
+  color: #fff;
+}
 h3 {
   color: #fff;
   opacity: 0.6;
@@ -37,34 +48,21 @@ h3 {
   font-size: 1.6vw;
 }
 
-h2 {
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: lighter;
-  letter-spacing: 2vw;
-  padding: 50px;
-}
-
-section {
-  height: fit-content;
-}
-
 video {
   margin: 20px;
-  width: 50vw;
-  border-radius: 20px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.286);
+  width: 30vw;
+  border: 5px solid white;
 }
 
-footer {
-  background-color: #333;
-  height: 200px;
-  color: white;
-  margin: 0px;
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  height: 200vh;
 }
-
-.grid-container {
-  display: grid;
+.slide {
+  width: 100vw;
+  height: 200vh;
 }
 
 .logo-grid {
@@ -87,6 +85,7 @@ footer {
   color: red;
   margin-right: 3vw;
   flex-shrink: 0;
+  animation: blink 1s 1s ease infinite;
 }
 
 .menu-item {
@@ -101,30 +100,11 @@ footer {
   cursor: pointer;
 }
 
-.projects {
-  background-color: white;
-}
-
 .project-items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-}
-
-.services {
-  background-image: url("./media/film-bg.png");
-  background-size: cover;
-  color: white;
-  padding: 40px;
-  font-family: sans-serif;
-  font-weight: 100;
-  letter-spacing: 0.5vw;
-}
-
-.photo {
-  background-color: rgb(141, 170, 141);
 }
 
 .focus-outer-one {
@@ -163,34 +143,24 @@ footer {
   flex-shrink: 0;
 }
 
-.services-info {
-  display: flex;
+.about {
+  background-color: #000000;
 }
-.list-of-services {
-  font-size: 2vw;
-  margin: 0px;
-  line-height: 6vw;
-  padding: 0 40px 0px 40px;
-}
-
-.service-description {
-  font-size: 1.5vw;
-  line-height: 3vw;
-  border-left: 2px solid white;
-  padding: 0 40px 0px 40px;
-}
-
 .about-description {
-  font-size: 1.5vw;
-  line-height: 3vw;
-  padding: 40px;
+  color: white;
+  max-width: 700px;
+  margin: 0 auto;
   font-family: sans-serif;
-  font-weight: 100;
-  letter-spacing: 0.5vw;
-  text-align: center;
+  line-height: 1.5;
 }
-
-.photo img {
-  margin: 0px;
-  padding: 0px;
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
