@@ -42,8 +42,9 @@ h2 {
   font-family: roboto;
   color: #fff;
   margin: 0px;
+  font-size: 1.5vw;
   padding-top: 50px;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1vw;
 }
 h3 {
   color: #fff;
@@ -58,16 +59,15 @@ h3 {
 
 video {
   margin-top: 50px;
-  margin-right: 20px;
-  width: 40vw;
-  border: 5px solid white;
+  width: 70vw;
+  border: 10px solid white;
 }
 
 img {
   max-width: 80vw;
   position: absolute;
   bottom: 0;
-  right: 30px;
+  right: 2vw;
   opacity: 0.5;
 }
 a {
@@ -175,22 +175,29 @@ a {
   color: #fff;
   font-family: sans-serif;
   line-height: 2;
-  font-size: 20px;
+  font-size: 1vw;
   letter-spacing: 0.5rem;
+  width: 70vw;
   max-width: 700px;
-  margin-top: 120px;
-  margin-left: 80px;
+  margin-top: 6vw;
+  margin-left: 5vw;
   opacity: 0.7;
 }
-
 .info {
   display: flex;
+  align-items: center;
+}
+
+.info-wrapper {
+  margin: 0 auto;
+  display: flex;
   justify-content: space-around;
+  width: 50vw;
+  max-height: 50vh;
 }
 
 .line {
   width: 0px;
-  height: 80vh;
   border: 1px solid rgba(255, 255, 255, 0.495);
   margin-top: 50px;
 }
