@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-color: #000000;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
 
 section {
   height: 100vh;
+  width: 100vw;
 }
 
 header .menu {
@@ -36,6 +38,9 @@ h2 {
   text-align: center;
   font-family: roboto;
   color: #fff;
+  margin: 0px;
+  padding-top: 50px;
+  letter-spacing: 1.5rem;
 }
 h3 {
   color: #fff;
@@ -52,6 +57,11 @@ video {
   margin: 20px;
   width: 30vw;
   border: 5px solid white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .container {
@@ -152,6 +162,11 @@ video {
   margin: 0 auto;
   font-family: sans-serif;
   line-height: 1.5;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
 }
 @keyframes blink {
   0% {
