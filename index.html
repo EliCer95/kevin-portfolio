@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <div class="slide one">
-        <header>
+        <header id="home">
           <div class="logo-grid">
             <div class="focus-outer-one">
               <div class="focus-inner-one"></div>
@@ -54,16 +54,49 @@
               </ul>
             </div>
           </div>
+          <a href="#home" class="home-link">HOME</a>
         </section>
       </div>
       <div class="slide two" id="projects">
         <section class="projects">
           <h2>PROJECTS</h2>
           <div class="project-items">
-            <video controls="controls" poster="./media/cbd.png">
-              <source src="./media/vape.mp4" type="video/mp4" />
-            </video>
+            <div class="carousel">
+              <button class="carousel__button carousel__button--left">
+                <img
+                  src="./media/arrow-left.png"
+                  alt="arrow-left"
+                  width="50px"
+                />
+              </button>
+              <div class="carousel__track-container">
+                <ul class="carousel__track">
+                  <li class="carousel__slide current-slide">
+                    <video controls="controls" poster="./media/cbd.png">
+                      <source src="./media/vape.mp4" type="video/mp4" />
+                    </video>
+                  </li>
+                  <li class="carousel__slide">
+                    <video controls="controls" poster="./media/cbd.png">
+                      <source src="./media/vape.mp4" type="video/mp4" />
+                    </video>
+                  </li>
+                </ul>
+              </div>
+              <button class="carousel__button carousel__button--right">
+                <img
+                  src="./media/arrow-right.png"
+                  alt="arrow-right"
+                  width="50px"
+                />
+              </button>
+              <!-- <div class="carousel__nav">
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+              </div> -->
+            </div>
           </div>
+          <a href="#home" class="home-link">HOME</a>
         </section>
         <section id="about">
           <h2>À PROPOS</h2>
@@ -82,8 +115,10 @@
           <div class="about-photo">
             <img src="./media/portrait2@2x.png" />
           </div>
+          <a href="#home" class="home-link">HOME</a>
         </section>
       </div>
     </div>
+    <script src="./carousel.js"></script>
   </body>
 </html>
